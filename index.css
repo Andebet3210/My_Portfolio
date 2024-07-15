@@ -254,7 +254,7 @@ span{
   }
   31%,
   100% {
-    content: "WebDeveloper";
+    content: "Web Developer";
   }
 }
 @keyframes typing {
@@ -377,4 +377,57 @@ span{
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
     width:50px ;
+}
+.services {
+  background: var(--bg-color);
+  color: black;
+}
+
+.services h2 {
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.service-box {
+  background-color: var(--main-color);
+  height: 300px;
+  border-radius: 3rem;
+  border: 15px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box:hover {
+  background: white;
+  color: black;
+  border: 5px solid var(--main-color);
+  transform: scale(1.03);
+}
+
+.service-info {
+  text-align: center;
+  padding: 2rem;
+}
+
+.service-info h4 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.service-info p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  line-height: 1.7;
 }
